@@ -1,5 +1,7 @@
 const OPENSEA_API_URL = "https://api.opensea.io/api/v1";
 const SHEET_NAME = "Floors";
+const PROJECT_COLUMN = "A";
+
 function onOpen() {
     var spreadsheet = SpreadsheetApp.getActive();
     var menuItems = [
@@ -64,6 +66,7 @@ function getCollections(collections){
 };
 
 function getProjects() {
-  const projects = getSheet().getRange("A2:A").getValues().flat().filter((v) => v != '');
+  const projects = getSheet().getRange(PROJECT_COLUMN+"2:"+PROJECT_COLUMN).getValues().flat().filter((v) => v != '');
   return projects
 }
+
