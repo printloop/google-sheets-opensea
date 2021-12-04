@@ -1,2 +1,2 @@
-# google-sheets-opensea
-Script for pulling in OpenSea data and saving in Google Sheets
+# Google Sheets OpenSea 
+Script for pulling OpenSea data and saving in Google Sheets
